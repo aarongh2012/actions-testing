@@ -3,12 +3,9 @@ name: Shell commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  call-rest-api:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello world"
-      - name: multiline
+      - name: call API
         run: |
-          node -v
-          npm -v
+          curl -X GET "https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest"
