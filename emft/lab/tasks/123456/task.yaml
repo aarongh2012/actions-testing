@@ -4,5 +4,5 @@ source:
   host: 654321
   mask: test.txt
 destination:
-  host: 098765
+  host: 098765543
   mask: '*.*'
