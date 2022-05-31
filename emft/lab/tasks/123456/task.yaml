@@ -2,8 +2,7 @@ name: ASDFGHJKL
 id: 123456
 source:
   host: 654321
-  mask: 'test.txt'
+  mask: test.txt
 destination:
   host: 098765
   mask: '*.*'
-  
