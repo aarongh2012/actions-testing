@@ -1,13 +1,13 @@
 name: Test
 on:
-  pull_request:
-    types: [opened]
+  push:
+    branches:
+      - main
 jobs:
   get_data:
   runs-on: ubuntu-latest
     steps:
-      - name: Get changed files
-        id: changed_files
+      - id: changed_files
         uses: trilom/file-changes-action@v1.2.3
       - name: output changed files
         run: |
