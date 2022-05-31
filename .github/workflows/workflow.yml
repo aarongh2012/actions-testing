@@ -5,11 +5,11 @@ on:
       - main
 jobs:
   get_data:
-  runs-on: ubuntu-latest
-  steps:
-    - id: changed_files
-      uses: trilom/file-changes-action@v1.2.3
-    - name: output changed files
-      run: |
-        echo '${{ steps.changed_files.outputs.files }}'
+    runs-on: ubuntu-latest
+    steps:
+      - id: changed_files
+        uses: trilom/file-changes-action@v1.2.3
+      - name: output changed files
+        run: |
+          echo '${{ steps.changed_files.outputs.files }}'
       
