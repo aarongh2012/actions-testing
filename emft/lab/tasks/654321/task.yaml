@@ -1,8 +1,0 @@
-name: QWERTY
-id: 13579
-source:
-  host: 63548789
-  mask: test.txt
-destination:
-  host: 6543211234
-  mask: '*.*'

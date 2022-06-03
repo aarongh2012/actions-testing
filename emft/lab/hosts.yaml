@@ -1,0 +1,13 @@
+---
+hosts:
+  share:
+    -
+      unc: asdferqwerqwerqer\asdf
+      username: asdf
+      ip: asdf
+  sshftp:
+    -
+      host: asdfasdfasdfasdfqwer
+      ip: asdf
+      port: asdf
+      username: asdf

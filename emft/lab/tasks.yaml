@@ -1,0 +1,27 @@
+---
+tasks:  
+  -
+    app: AAGroups
+    squad: [object Object]
+    schedule:
+      sunday: true
+      monday: true
+      tuesday: true
+      wednesday: true
+      thursday: true
+      friday: true
+      saturday: true
+      frequency: 15
+    source:
+      type: unc
+      folder: 
+      filemask: asdf
+      overwrite: true
+    destination:
+      type: sftp
+      folder: asdf
+      rename: keep
+      newname: 
+    notification:
+      success: 
+      fail: 
