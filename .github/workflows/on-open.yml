@@ -1,0 +1,8 @@
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  open_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo open request
