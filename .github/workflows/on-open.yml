@@ -9,9 +9,9 @@ jobs:
       - name: Open issue
         run: |
           echo "::set-output name=url::test"
-        id: open_issue
+        id: set-output
       - name: close pr
-        - uses: peter-evans/close-pull@v2.0.0
-          with:
-            comment: "blah blah blah blah"
-            delete-branch: true
+        uses: peter-evans/close-pull@v2.0.0
+        with:
+          comment: "blah blah blah blah"
+          delete-branch: true
