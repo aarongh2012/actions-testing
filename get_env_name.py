@@ -10,6 +10,7 @@ def main():
     x = branch_name.rfind('-') + 1
     env_name = branch_name[:x].upper() + pr_num
     os.environ['GH_ENV_NAME'] = env_name
+    print(os.environ['GH_ENV_NAME'])
 
 if __name__ == "__main__":
     main()
