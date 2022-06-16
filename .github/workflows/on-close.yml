@@ -5,4 +5,8 @@ jobs:
   close:
     runs-on: ubuntu-latest
     steps:
-      - run: echo delete environment
+      - name: get branch
+        id: branch-name
+        uses: tj-actions/branch-names@v5.2
+      - run: echo "${{ steps.branch-name.output.current_branch }}"
+      - run: echo ${{github.event.number}}
