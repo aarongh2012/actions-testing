@@ -8,7 +8,8 @@ def main():
     print(branch_name)
     print(pr_num)
     x = branch_name.rfind('-') + 1
-    print(branch_name[:x].upper() + pr_num)
+    env_name = branch_name[:x].upper() + pr_num
+    os.environ['GH_ENV_NAME'] = env_name
 
 if __name__ == "__main__":
     main()
