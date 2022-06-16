@@ -26,4 +26,4 @@ jobs:
       - name: delete environment
         run: |
           echo ${{ secrets.GH_TOKEN }} | gh auth login --with-token
-          gh api -H "Accept: application/vnd.github.v3+json" /repos/aarongh2012/actions-testing/environments/${{ steps.get-env-name.outputs.env-name }}
+          gh api --method DELETE -H "Accept: application/vnd.github.v3+json" /repos/aarongh2012/actions-testing/environments/${{ steps.get-env-name.outputs.env-name }}
