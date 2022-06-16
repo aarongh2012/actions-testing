@@ -8,6 +8,6 @@ def main():
     x = branch_name.rfind('-') + 1
     env_name = branch_name[:x] + pr_num
 
-    return env_name.upper()
+    print(env_name.upper())
 if __name__ == "__main__":
     main()
