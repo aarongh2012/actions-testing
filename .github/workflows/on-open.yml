@@ -13,8 +13,8 @@ jobs:
           echo "::set-output name=url::test"
         id: set-output
       - name: Add PR Comment
-          uses: mshick/add-pr-comment@v1
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-            message: ${{ steps.set-output.outputs.url }}
+        uses: mshick/add-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message: ${{ steps.set-output.outputs.url }}
